@@ -5,6 +5,7 @@ namespace II
 {
     public class MapInstantiator : MonoBehaviour
     {
+        [SerializeField] private GameObject firstRoomPrefab;
         [SerializeField] private List<GameObject> normalRoomPrefabs;
         [SerializeField] private List<GameObject> bossRoomPrefabs;
         [SerializeField] private List<GameObject> shopRoomPrefabs;
@@ -16,6 +17,12 @@ namespace II
             for (int i = 0; i < bluePrint.RoomData.Count; ++i)
             {
                 var pos = bluePrint.GetPositionFromRoomNumber(bluePrint.RoomData[i].RoomNumber) * 20.0f;
+
+                if (bluePrint.RoomData[i].RoomNumber == bluePrint.START_ROOM_NUMBER)
+                {
+                    Instantiate(firstRoomPrefab, pos, Quaternion.identity);
+                    continue;
+                }
 
                 switch (bluePrint.RoomData[i].RoomType)
                 {

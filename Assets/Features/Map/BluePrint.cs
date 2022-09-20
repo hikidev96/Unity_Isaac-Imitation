@@ -7,7 +7,7 @@ namespace II
     [CreateAssetMenu(menuName = "II/BluePrint")]
     public class BluePrint : ScriptableObject
     {
-        public const int START_ROOM_NUMBER = 35;
+        public readonly int START_ROOM_NUMBER = 35;
         public int StageLevel = 1;
 
         private Queue<int> roomNumberQueue;
