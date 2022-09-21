@@ -44,6 +44,12 @@ TagManager:
   - name: Ground
     uniqueID: 3991224201
     locked: 0
+  - name: Door
+    uniqueID: 1703376687
+    locked: 0
   - name: Shade
     uniqueID: 1770783561
+    locked: 0
+  - name: OnGround
+    uniqueID: 1617876675
     locked: 0

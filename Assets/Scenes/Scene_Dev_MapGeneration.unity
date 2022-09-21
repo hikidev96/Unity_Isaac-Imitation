@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 100, y: 60, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 1543138518}
   - component: {fileID: 1543138519}
   m_Layer: 0
-  m_Name: MapInstantiator
+  m_Name: BluePrintMaterializer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,6 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54e8c29bd89f084bae8d3064019a3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  normalDoorPrefab: {fileID: 1059471106081676731, guid: f672851e8ef6a834e883d95c6b0cde9a, type: 3}
+  bossDoorPrefab: {fileID: 8578805643828260207, guid: 8a993ccd1827c464196d7439a36b0695, type: 3}
+  shopDoorPrefab: {fileID: 1059471106081676731, guid: 8d390f4b1199380448240e02f22b72d4, type: 3}
+  treasureDoorPrefab: {fileID: 8578805643828260207, guid: 6ff3f646f996d2440b0c403ad91b5af1, type: 3}
   firstRoomPrefab: {fileID: 1102345347082721931, guid: ed4ec628fe3f8ec4d8ea5bd326cd917f, type: 3}
   normalRoomPrefabs:
   - {fileID: 1064196292885315347, guid: 54b6890ef5075ff438473a8e4dcc5c6f, type: 3}

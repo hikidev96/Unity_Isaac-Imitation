@@ -32,6 +32,27 @@ namespace II
             PostProcess();
         }
 
+        public bool Contain(int roomNumber)
+        {
+            return roomNumbers.Contains(roomNumber);
+        }
+
+        public RoomData GetRoomDataFromRoomNumber(int roomNumber)
+        {
+            for (int i = 0; i < roomData.Count; ++i)
+            {
+                if (roomData[i].RoomNumber == roomNumber)
+                    return roomData[i];
+            }
+
+            return null;
+        }
+
+        public Vector2 GetPositionFromRoomNumber(int roomNumber)
+        {
+            return new Vector2(roomNumber % 10, roomNumber / 10);
+        }
+
         private void Prep()
         {
             targetRoomCount = (int)(Random.Range(0, 2) + 5 + StageLevel * 2.6);
@@ -150,22 +171,6 @@ namespace II
             if (roomNumbers.Contains(roomNumber - 1) == true) result++;
 
             return result;
-        }
-
-        private RoomData GetRoomDataFromRoomNumber(int roomNumber)
-        {
-            for (int i = 0; i < roomData.Count; ++i)
-            {
-                if (roomData[i].RoomNumber == roomNumber)
-                    return roomData[i];
-            }
-
-            return null;
-        }
-
-        public Vector2 GetPositionFromRoomNumber(int roomNumber)
-        {
-            return new Vector2(roomNumber % 10, roomNumber / 10);
-        }
+        }        
     }
 }
