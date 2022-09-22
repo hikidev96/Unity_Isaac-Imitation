@@ -16,12 +16,18 @@ namespace II
     {
         [SerializeField] private Transform leftDoorLeaf;
         [SerializeField] private Transform rightDoorLeaf;
+        [SerializeField] private Transform shiftSpot;
 
+        private Room belongRoom;
         private Door outDoor;        
 
-        public static Door Create(GameObject prefab, Vector2 pos, Quaternion rot, Transform parent)
+        public Room BelongRoom => belongRoom;
+        public Transform ShiftSpot => shiftSpot;
+
+        public static Door Create(Room belongRoom, GameObject prefab, Vector2 pos, Quaternion rot, Transform parent)
         {
             var newDoor = Instantiate(prefab, pos, rot, parent).GetComponent<Door>();
+            newDoor.belongRoom = belongRoom;
             return newDoor;
         }
 
@@ -45,6 +51,15 @@ namespace II
         public void SetOutDoor(Door outDoor)
         {
             this.outDoor = outDoor;
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag("Isaac") == true)
+            {
+                collision.transform.position = outDoor.shiftSpot.position;
+                Manager.Camera.MoveCameraToRoom(outDoor.BelongRoom);
+            }
         }
     }
 }

@@ -26,6 +26,11 @@ namespace II
         [SerializeField] private Transform bottomDoorSpot;
         [SerializeField] private Transform doorParent;
 
+        [SerializeField] private GameObject leftDoorCollider;
+        [SerializeField] private GameObject rightDoorCollider;
+        [SerializeField] private GameObject topDoorCollider;
+        [SerializeField] private GameObject bottomDoorCollider;
+
         private Door leftDoor;
         private Door rightDoor;
         private Door topDoor;
@@ -45,16 +50,6 @@ namespace II
         private RoomData roomData;
 
         public RoomData RoomData => roomData;
-
-        private void Awake()
-        {
-            DeactivateAllDoors();
-        }
-
-        private void Start()
-        {
-            ActivateNeighbourDoors();
-        }
 
         public static Room Create(GameObject prefab, Vector2 pos, RoomData roomData)
         {
@@ -96,35 +91,35 @@ namespace II
         [Button("Open All Door"), TitleGroup("Debug")]
         private void OpenAllDoor()
         {
-            //rightDoor.Open();
-            //leftDoor.Open();
-            //topDoor.Open();
-            //bottomDoor.Open();
+            if (leftDoor != null)
+            {
+                leftDoor.Open();
+                leftDoorCollider.SetActive(false);
+            }
+            if (rightDoor != null)
+            {
+                rightDoor.Open();
+                rightDoorCollider.SetActive(false);
+            }
+            if (topDoor != null)
+            {
+                topDoor.Open();
+                topDoorCollider.SetActive(false);
+            }
+            if (bottomDoor != null)
+            {
+                bottomDoor.Open();
+                bottomDoorCollider.SetActive(false);
+            }
         }
 
         [Button("Close All Door"), TitleGroup("Debug")]
         private void CloseAllDoor()
         {
-            //rightDoor.Close();
-            //leftDoor.Close();
-            //topDoor.Close();
-            //bottomDoor.Close();
-        }
-
-        private void DeactivateAllDoors()
-        {
-            //topDoor.gameObject.SetActive(false);
-            //bottomDoor.gameObject.SetActive(false);
-            //leftDoor.gameObject.SetActive(false);
-            //rightDoor.gameObject.SetActive(false);
-        }
-
-        private void ActivateNeighbourDoors()
-        {
-            //if (bluePrint.Contain(roomData.RoomNumber + 1) == true) rightDoor.gameObject.SetActive(true);
-            //if (bluePrint.Contain(roomData.RoomNumber - 1) == true) leftDoor.gameObject.SetActive(true);
-            //if (bluePrint.Contain(roomData.RoomNumber + 10) == true) topDoor.gameObject.SetActive(true);
-            //if (bluePrint.Contain(roomData.RoomNumber - 10) == true) bottomDoor.gameObject.SetActive(true);
+            rightDoor?.Close();
+            leftDoor?.Close();
+            topDoor?.Close();
+            bottomDoor?.Close();
         }
     }
 }
