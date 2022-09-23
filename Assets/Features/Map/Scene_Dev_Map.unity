@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54e8c29bd89f084bae8d3064019a3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bluePrint: {fileID: 11400000, guid: 5a88e1c44c26d11448fd2b86667d1a64, type: 2}
   normalDoorPrefab: {fileID: 1059471106081676731, guid: f672851e8ef6a834e883d95c6b0cde9a, type: 3}
   bossDoorPrefab: {fileID: 8578805643828260207, guid: 8a993ccd1827c464196d7439a36b0695, type: 3}
   shopDoorPrefab: {fileID: 1059471106081676731, guid: 8d390f4b1199380448240e02f22b72d4, type: 3}
@@ -264,7 +265,6 @@ MonoBehaviour:
   - {fileID: 923527715640019015, guid: d6bb8c2a72a585e4893ab8d42135665d, type: 3}
   treasureRoomPrefabs:
   - {fileID: 7501773829614797064, guid: 1373cf980101d8548811905a75c4e5a5, type: 3}
-  bluePrint: {fileID: 11400000, guid: 5a88e1c44c26d11448fd2b86667d1a64, type: 2}
 --- !u!1 &1605305269
 GameObject:
   m_ObjectHideFlags: 0

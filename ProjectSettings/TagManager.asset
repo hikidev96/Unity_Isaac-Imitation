@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Isaac
+  - Wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Isaac
   - Water
   - UI
-  - 
+  - Isaac Tear
   - 
   - 
   - 
@@ -53,4 +54,7 @@ TagManager:
     locked: 0
   - name: OnGround
     uniqueID: 1617876675
+    locked: 0
+  - name: Air
+    uniqueID: 1593487373
     locked: 0
