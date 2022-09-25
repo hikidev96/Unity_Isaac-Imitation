@@ -56,6 +56,11 @@ namespace II
             return leftEyeSpotWhenVertical.position;
         }
 
+        //private Vector2 GetDirToFire()
+        //{
+        //    if (Manager.Input.FireValue)
+        //}
+
         private void SwapEyeToFire()
         {
             if (eyeToFire == EEYe.RightEye) eyeToFire = EEYe.LeftEye;

@@ -45,12 +45,18 @@ namespace II
 
         void Controls.IIsaacControlActions.OnHorizontalFireTear(InputAction.CallbackContext context)
         {
-            fireValue = new Vector2(context.ReadValue<float>(), 0.0f);
+            if (context.started)
+            {
+                fireValue = new Vector2(context.ReadValue<float>(), 0.0f);
+            }            
         }
 
         void Controls.IIsaacControlActions.OnVerticalFireTear(InputAction.CallbackContext context)
         {
-            fireValue = new Vector2(0.0f, context.ReadValue<float>());
+            if (context.started)
+            {
+                fireValue = new Vector2(0.0f, context.ReadValue<float>());
+            }                
         }
     }
 }
