@@ -259,6 +259,9 @@ MonoBehaviour:
   firstRoomPrefab: {fileID: 1102345347082721931, guid: ed4ec628fe3f8ec4d8ea5bd326cd917f, type: 3}
   normalRoomPrefabs:
   - {fileID: 1064196292885315347, guid: 54b6890ef5075ff438473a8e4dcc5c6f, type: 3}
+  - {fileID: 1064196292885315347, guid: 201a6697446191649b1d75b46b6e990a, type: 3}
+  - {fileID: 1064196292885315347, guid: 0d8dd2ade2c25e64ca1fb9876df4db1f, type: 3}
+  - {fileID: 1064196292885315347, guid: c16e2b1ebfbab224584aaf2a3be095a6, type: 3}
   bossRoomPrefabs:
   - {fileID: 1304633876216077664, guid: 9234ab3266a6a5e4e9432cd1b0d31eda, type: 3}
   shopRoomPrefabs:

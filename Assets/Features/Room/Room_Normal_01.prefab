@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1815300048657612051, guid: 627cdcdc67d9d174ca69bd644ac57bac, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3658419159702657452, guid: 627cdcdc67d9d174ca69bd644ac57bac, type: 3}
       propertyPath: m_Name
-      value: Room_BasePrefab
+      value: Room_Normal_01
       objectReference: {fileID: 0}
     - target: {fileID: 3658419159702657459, guid: 627cdcdc67d9d174ca69bd644ac57bac, type: 3}
       propertyPath: m_RootOrder

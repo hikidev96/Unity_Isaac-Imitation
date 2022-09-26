@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace II
-{    
+{
     public class InputManager : MonoBehaviour, Controls.IIsaacControlActions
     {
         private Controls controls;
@@ -45,18 +45,12 @@ namespace II
 
         void Controls.IIsaacControlActions.OnHorizontalFireTear(InputAction.CallbackContext context)
         {
-            if (context.started)
-            {
-                fireValue = new Vector2(context.ReadValue<float>(), 0.0f);
-            }            
+            fireValue = new Vector2(context.ReadValue<float>(), 0.0f);
         }
 
         void Controls.IIsaacControlActions.OnVerticalFireTear(InputAction.CallbackContext context)
         {
-            if (context.started)
-            {
-                fireValue = new Vector2(0.0f, context.ReadValue<float>());
-            }                
+            fireValue = new Vector2(0.0f, context.ReadValue<float>());
         }
     }
 }

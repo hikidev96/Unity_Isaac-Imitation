@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8210557554473868065}
   - component: {fileID: 8210557554473868064}
   m_Layer: 0
-  m_Name: RoomContentSpot
+  m_Name: RoomObjectSpot_TNT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47bf4e449390594fb24112a9ddd26d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomContentPrefabs: []
-  roomContentSize: 0
+  roomObjectGenerations:
+  - prefab: {fileID: 5408681011098850992, guid: 7930fa667bd97534693b7b7b6eb266d4, type: 3}
+    chance: 100
+  roomObjectSize: 0

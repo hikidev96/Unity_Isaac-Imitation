@@ -25,6 +25,7 @@ namespace II
         [SerializeField] private Transform topDoorSpot;
         [SerializeField] private Transform bottomDoorSpot;
         [SerializeField] private Transform doorParent;
+        [SerializeField] private Transform roomMonsterSpotParent;
 
         [SerializeField] private GameObject leftDoorCollider;
         [SerializeField] private GameObject rightDoorCollider;
@@ -50,6 +51,14 @@ namespace II
         private RoomData roomData;
 
         public RoomData RoomData => roomData;
+
+        private void Start()
+        {
+            if (roomMonsterSpotParent.childCount == 0)
+            {
+                Clear();
+            }
+        }
 
         public static Room Create(GameObject prefab, Vector2 pos, RoomData roomData)
         {

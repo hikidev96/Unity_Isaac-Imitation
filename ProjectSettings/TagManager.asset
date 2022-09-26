@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Isaac
   - Wall
+  - Rock
+  - Poop
+  - TNT
+  - FirePlace
   layers:
   - Default
   - TransparentFX
