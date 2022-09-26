@@ -56,6 +56,9 @@ TagManager:
   - name: Shade
     uniqueID: 1770783561
     locked: 0
+  - name: GroundSurface
+    uniqueID: 3059754977
+    locked: 0
   - name: OnGround
     uniqueID: 1617876675
     locked: 0

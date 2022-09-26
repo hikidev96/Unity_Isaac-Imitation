@@ -42,14 +42,12 @@ namespace II
         {
             Poof();
 
-            //if (collision.gameObject.CompareTag("Wall"))
-            //{
-            //    Poof();
-            //}
-            //else if (collision.gameObject.CompareTag("Rock"))
-            //{
-            //    Poof();
-            //}
+            var damageInterface = collision.gameObject.GetComponent<IDamage>();
+
+            if (damageInterface != null)
+            {
+                damageInterface.Damage(1.0f, EDamageType.Tear);
+            }
         }
     }
 }

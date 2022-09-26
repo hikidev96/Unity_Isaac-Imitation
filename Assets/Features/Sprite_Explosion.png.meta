@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e114a81711461474d8e2de1048be5e5f
+guid: 86071307e6baf2047ab2798d6d2ec928
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,253 +104,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Rock_Normal_00
+      name: Sprite_Explosion_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 226
-        width: 25
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9081aa884d87e5d4e800945263ee6f08
-      internalID: 115980017
+      spriteID: e666bdbc1f5eabb4eb330a68cc03c990
+      internalID: -1291901427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Normal_01
+      name: Sprite_Explosion_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 225
-        width: 27
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 96
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 678975a08a944024a95daa241d023729
-      internalID: -1880973275
+      spriteID: df41c784f39334b4e9ce1567a133e94a
+      internalID: 534308074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Normal_02
+      name: Sprite_Explosion_2
       rect:
         serializedVersion: 2
-        x: 66
-        y: 224
-        width: 27
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 192
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adfabc1311397104a9e6684750ceff15
-      internalID: 91858588
+      spriteID: b2dd97079dd5418479757b4d394e36e2
+      internalID: 1040129350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Block_Metal_00
+      name: Sprite_Explosion_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a391f775d810745ba792e7bd5f8324
+      internalID: -1767338511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Explosion_4
       rect:
         serializedVersion: 2
         x: 0
         y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3589556b1adb778489777b232828bb34
-      internalID: -90091188
+      spriteID: 75d3debbb32679e4a83e3b5366043d1e
+      internalID: -124616652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Tinted_00
+      name: Sprite_Explosion_5
       rect:
         serializedVersion: 2
-        x: 35
-        y: 194
-        width: 25
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 96
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bd892ea86f46eb469fafd06d0ec8711
-      internalID: 1240169594
+      spriteID: 17e6a38adb9180c4692c68e47628524e
+      internalID: -153448327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Bomb_00
+      name: Sprite_Explosion_6
       rect:
         serializedVersion: 2
-        x: 2
-        y: 162
-        width: 26
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 192
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3916e4906f8b912429761cdaaa9d1bcc
-      internalID: -914235463
+      spriteID: 641de2d06f5e44c4790fc11b03bc68ae
+      internalID: 1392189683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Tinted_01
+      name: Sprite_Explosion_7
       rect:
         serializedVersion: 2
-        x: 35
-        y: 161
-        width: 25
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 288
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d5c1580987b6b94b822434e1ffda2f4
-      internalID: -1451629361
+      spriteID: 11dbd3260a39a5340a0b6d961ea57ee4
+      internalID: 144892100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Tinted_02
+      name: Sprite_Explosion_8
       rect:
         serializedVersion: 2
-        x: 99
-        y: 161
-        width: 26
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0e3af10b9d3a3e4585aca9a6d03eddc
-      internalID: 817038090
+      spriteID: f2aa1f47f6173224aa57dc6b53cbf02b
+      internalID: 1080704779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Dregs_00
+      name: Sprite_Explosion_9
       rect:
         serializedVersion: 2
-        x: 99
-        y: 241
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77329999851181c408b43418580721f8
-      internalID: -1568192178
+      spriteID: 3b62597513980984a9e51775f823003a
+      internalID: 1618903531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Dregs_02
+      name: Sprite_Explosion_10
       rect:
         serializedVersion: 2
-        x: 100
-        y: 226
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4b86ac005b27eb4c9db04932c4853f2
-      internalID: 1219946172
+      spriteID: 6950870cda2b8404f8ea06f0434ce972
+      internalID: 791654284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Rock_Dregs_01
+      name: Sprite_Explosion_11
       rect:
         serializedVersion: 2
-        x: 114
-        y: 240
-        width: 12
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 288
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 722f5bbf6cdb07f4c9ad175b4403a948
-      internalID: -213974011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Rock_Dregs_03
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 228
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83d00e4bf644c374eb47aeeba30fb96d
-      internalID: 639384395
+      spriteID: eb11a695118d3a046828063d6c0a7a92
+      internalID: 1474719663
       vertices: []
       indices: 
       edges: []
@@ -366,32 +366,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite_Rock_9: -694319259
-      Sprite_Rock_Normal_01: -1880973275
-      Sprite_Rock_Bomb_00: -914235463
-      Sprite_Rock_6: -162662792
-      Sprite_Rock_Dregs_00: -1568192178
-      Sprite_Rock_Tinted_01: -1451629361
-      Sprite_Rock_4: -61591533
-      Sprite_Rock_22: -959553760
-      Sprite_Rock_10: -2034996992
-      Sprite_Rock_19: -1798593349
-      Sprite_Rock_Dregs_03: -628660849
-      Sprite_Rock_16: 31371490
-      Sprite_Rock_Dregs_01: -213974011
-      Sprite_Block_Metal_00: -90091188
-      Sprite_Rock_21: 2112472482
-      Sprite_Rock_18: 1257361554
-      Sprite_Rock_Normal_02: 91858588
-      Sprite_Rock_13: -1259335752
-      Sprite_Rock_20: -1984091285
-      Sprite_Rock_5: 32041777
-      Sprite_Rock_11: -477348543
-      Sprite_Rock_12: -372157124
-      Sprite_Rock_Tinted_02: 817038090
-      Sprite_Rock_Tinted_00: 1240169594
-      Sprite_Rock_Dregs_02: 1219946172
-      Sprite_Rock_Normal_00: 115980017
+      Sprite_Explosion_8: 1080704779
+      Sprite_Explosion_7: 144892100
+      Sprite_Explosion_2: 1040129350
+      Sprite_Explosion_6: 1392189683
+      Sprite_Explosion_10: 791654284
+      Sprite_Explosion_5: -153448327
+      Sprite_Explosion_1: 534308074
+      Sprite_Explosion_4: -124616652
+      Sprite_Explosion_12: 1525662567
+      Sprite_Explosion_0: -1291901427
+      Sprite_Explosion_11: 1474719663
+      Sprite_Explosion_3: -1767338511
+      Sprite_Explosion_9: 1618903531
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 629e0807375e2a747b13f02a8ccc5433
+guid: a4b55de9ed3f5a043a175dfbd24abd2f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,274 +104,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Fire_0
+      name: Sprite_FirePoof_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 48
-        height: 48
+        y: 64
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b63356dd04cd2841b40ecda6015ba23
-      internalID: 1289020299
+      spriteID: 854b71c650782b14b9e8bc46a69b015f
+      internalID: -881658576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Fire_1
+      name: Sprite_FirePoof_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 48
-        height: 48
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4b6810d8ecb7f4e8d5dc96f0cf7492
-      internalID: 1681676193
+      spriteID: 3b9500ed247ab6148a93647f6fd9ca49
+      internalID: 2128710099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Fire_2
+      name: Sprite_FirePoof_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 48
-        width: 48
-        height: 48
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03887a53ca27de745a1e03ae595bc0f7
-      internalID: -752939552
+      spriteID: 58c038a0784fdd84c8ab2a7afd7f859e
+      internalID: 1318717253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Fire_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 48
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.15}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 942926f1faeaeb144bbbfd5d5ef7a50c
-      internalID: -790671925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Fire_4
+      name: Sprite_FirePoof_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 48
-        width: 48
-        height: 48
+        y: 64
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a47e0a4da071804eb1ec0f857716663
-      internalID: 96276010
+      spriteID: 5307f031a19ceb54cbd2327f099af922
+      internalID: 776569063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Fire_5
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 48
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.15}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb0ead1954ba9d24cb8cf6cba74325e9
-      internalID: -1564826848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Fire_6
+      name: Sprite_FirePoof_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65bdcbdfc9c0bad4682c308ae7e1f18b
-      internalID: 3674834
+      spriteID: 7b682da4f39adf3489107528d7704818
+      internalID: 594510513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Fire_7
+      name: Sprite_FirePoof_5
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4605ea120af0c14b8184fcf900a1b1e
-      internalID: -1374296506
+      spriteID: 50daaa5c6f478914e9de901d5565fd01
+      internalID: 1048274948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Fire_8
+      name: Sprite_FirePoof_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 128
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.15}
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f695f0830dc44c44aadcde264b480fe4
-      internalID: -556553875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Fire_9
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.15}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22d82020bdc99b94992cf7beddfa5280
-      internalID: 727550137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Fire_10
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.15}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d59c5cabba65f5449cc3585989e6159
-      internalID: -412606498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Fire_11
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.15}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e7a19640e770a14587bc9618c41026f
-      internalID: -389134045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Fire_12
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 48
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.15}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c7524ed434e6c646898b0df6812ad83
-      internalID: 743146748
+      spriteID: 914c2631130e80e4b9fafdcdfd1dcbf1
+      internalID: -477076564
       vertices: []
       indices: 
       edges: []
@@ -387,19 +261,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite_Fire_1: 1681676193
-      Sprite_Fire_9: 727550137
-      Sprite_Fire_3: -790671925
-      Sprite_Fire_12: 743146748
-      Sprite_Fire_8: -556553875
-      Sprite_Fire_10: -412606498
-      Sprite_Fire_2: -752939552
-      Sprite_Fire_11: -389134045
-      Sprite_Fire_4: 96276010
-      Sprite_Fire_6: 3674834
-      Sprite_Fire_0: 1289020299
-      Sprite_Fire_5: -1564826848
-      Sprite_Fire_7: -1374296506
+      Sprite_FirePoof_0: -881658576
+      Sprite_FirePoof_2: 1318717253
+      Sprite_FirePoof_3: 776569063
+      Sprite_FirePoof_6: -477076564
+      Sprite_FirePoof_4: 594510513
+      Sprite_FirePoof_1: 2128710099
+      Sprite_FirePoof_5: 1048274948
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
