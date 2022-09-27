@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 636345310, guid: 8a17230ba9fd38d4a8a78644fd93e2ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5408681011098850994}
   - component: {fileID: 6550575467934570058}
   - component: {fileID: 8053832368948576578}
+  - component: {fileID: 8322330341913837760}
   m_Layer: 0
   m_Name: Poop_Normal
   m_TagString: Rock
@@ -164,3 +165,25 @@ MonoBehaviour:
   - {fileID: 636345310, guid: 8a17230ba9fd38d4a8a78644fd93e2ee, type: 3}
   sr: {fileID: 5408681010768148601}
   bc: {fileID: 6550575467934570058}
+  dregsInstantiator: {fileID: 8322330341913837760}
+--- !u!114 &8322330341913837760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408681011098850992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c71a0cb94f139e44986d34717839761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dregsPrefabs:
+  - {fileID: 2328890272734949883, guid: 272239fd4f349ca4582cdbba97e89fae, type: 3}
+  - {fileID: 2328890272734949883, guid: 81fed61b5effde841b56d2d813b1c4f8, type: 3}
+  - {fileID: 2328890272734949883, guid: 60461a801c3c2064a98c805dc790c44f, type: 3}
+  - {fileID: 2328890272734949883, guid: b6e76d17950d9544d92e619dfb413386, type: 3}
+  - {fileID: 2328890272734949883, guid: 5896715e1e9d5574b8e58ddc6eaba89f, type: 3}
+  - {fileID: 2328890272734949883, guid: 86ccee0a76fd87a479d0f9ec2f5472ae, type: 3}
+  - {fileID: 2328890272734949883, guid: 079493b2b5a88834f9d3858cc00d1e5f, type: 3}
+  dregsRandomCountRange: {x: 1, y: 3}

@@ -7,6 +7,7 @@ namespace II
         [SerializeField] private Sprite[] spritesPerHp;
         [SerializeField] private SpriteRenderer sr;
         [SerializeField] private BoxCollider2D bc;
+        [SerializeField] private DregsInstantiator dregsInstantiator;
 
         private int hp = 4;
 
@@ -17,12 +18,15 @@ namespace II
             if (damageType == EDamageType.Bomb) hp = 0;
             if (damageType == EDamageType.Tear) hp -= 1;
 
-            if (hp == 3) sr.sprite = spritesPerHp[hp];
-            if (hp == 2) sr.sprite = spritesPerHp[hp];
-            if (hp == 1) sr.sprite = spritesPerHp[hp];
+            if (Random.Range(0, 3) == 0)
+            {
+                dregsInstantiator.InstantitateDregs();
+            }
+
+            sr.sprite = spritesPerHp[hp];
+
             if (hp == 0)
             {
-                sr.sprite = spritesPerHp[hp];
                 Destroy(bc);
             }
         }

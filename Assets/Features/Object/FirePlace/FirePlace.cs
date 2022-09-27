@@ -6,6 +6,7 @@ namespace II
     {
         [SerializeField] private Transform fireTransform;
         [SerializeField] private GameObject firePoofPrefab;
+        [SerializeField] private BoxCollider2D bc;
 
         private int hp = 4;
 
@@ -22,6 +23,7 @@ namespace II
             if (hp == 0)
             {
                 Instantiate(firePoofPrefab, this.transform.position, Quaternion.identity);
+                Destroy(bc);
                 Destroy(fireTransform.gameObject);
             }
         }

@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1617876675
+  m_SortingLayerID: -1272075151
   m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 1919337437, guid: b4e5c3a446a1b4046b31a873c6b5dbe4, type: 3}
@@ -177,8 +177,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 5
-  m_SortingOrder: 1
+  m_SortingLayer: 6
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1289020299, guid: 629e0807375e2a747b13f02a8ccc5433, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -220,7 +220,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5408681011098850994}
   - component: {fileID: 6550575467934570058}
-  - component: {fileID: 4786598952570801140}
   - component: {fileID: 469600052239483091}
   m_Layer: 0
   m_Name: FirePlace_Normal
@@ -270,19 +269,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 0.8, y: 0.6}
   m_EdgeRadius: 0
---- !u!210 &4786598952570801140
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5408681011098850992}
-  m_Enabled: 1
-  m_SortingLayerID: 1617876675
-  m_SortingLayer: 5
-  m_SortingOrder: 0
 --- !u!114 &469600052239483091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,3 +285,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireTransform: {fileID: 5408681010768148600}
   firePoofPrefab: {fileID: 3092325315998691285, guid: 43d35f1b98dc319459502f19e747e046, type: 3}
+  bc: {fileID: 6550575467934570058}

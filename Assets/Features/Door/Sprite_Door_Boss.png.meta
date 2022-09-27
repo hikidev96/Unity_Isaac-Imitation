@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 25b0f7a805ff96a4789019c8c773582e
+guid: 355e3430da22d454e8ae62b5b3dadf1a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 26
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Door_Normal_Frame
+      name: Sprite_Door_Boss_Frame
       rect:
         serializedVersion: 2
-        x: 8
-        y: 198
-        width: 49
-        height: 33
+        x: 2
+        y: 150
+        width: 61
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,18 +118,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99eb873fdb8021649bb39ee54fef0276
-      internalID: -1590150695
+      spriteID: 07e048458042f764ba4debf5fb388430
+      internalID: -46270616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Door_Normal_Inside
+      name: Sprite_Door_Boss_Inside
       rect:
         serializedVersion: 2
         x: 84
-        y: 201
+        y: 153
         width: 25
         height: 23
       alignment: 0
@@ -139,19 +139,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc286da049b8fe04bb37b8527313b16d
-      internalID: -1615036736
+      spriteID: f26b21610409fac49935879974670123
+      internalID: 1485025409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Door_Normal_LeftLeaf
+      name: Sprite_Door_Boss_LeftLeaf
       rect:
         serializedVersion: 2
-        x: 19
-        y: 153
-        width: 14
+        x: 18
+        y: 105
+        width: 15
         height: 23
       alignment: 9
       pivot: {x: 1, y: 0.5}
@@ -160,19 +160,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a85dd8301ccc42418af3d2a9c2663cb
-      internalID: -109052174
+      spriteID: c8100df218efc9642880f5287474856c
+      internalID: 1510935416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Door_Normal_RightLeaf
+      name: Sprite_Door_Boss_RightLeaf
       rect:
         serializedVersion: 2
         x: 96
-        y: 153
-        width: 14
+        y: 105
+        width: 16
         height: 23
       alignment: 9
       pivot: {x: 0, y: 0.5}
@@ -181,29 +181,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8396ed6dc1cbace41a536c22dc699815
-      internalID: -711380964
+      spriteID: fd2856cddfe64414d898f3f5129f4e50
+      internalID: -98340418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Door_Normal_RightLeaf_Key
+      name: Sprite_Door_Boss_RedLight
       rect:
         serializedVersion: 2
-        x: 91
-        y: 105
-        width: 18
-        height: 23
-      alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+        x: 71
+        y: 0
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca778d48fa1089d4bbfc9f31c33ccb3d
-      internalID: -9563808
+      spriteID: fe32ccb124447124f8900645db3a23a0
+      internalID: -428900281
       vertices: []
       indices: 
       edges: []
@@ -219,29 +219,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite_Door_Normal_6: 1668411613
-      Sprite_Door_Normal_18: 1663679860
-      Sprite_Door_Normal_12: -914657896
-      Sprite_Door_Normal_LeftLeaf: -109052174
-      Sprite_Door_Normal_16: 1298114980
-      Sprite_Door_Normal_RightLeaf_Key: -9563808
-      Sprite_Door_Normal_Inside: -1615036736
-      Sprite_Door_Normal_8: -1121233739
-      Sprite_Door_Normal_4: 1760670470
-      Sprite_Door_Normal_5: -673559832
-      Sprite_Door_Normal_9: -1400634370
-      Sprite_Door_Normal_21: 1041492791
-      Sprite_Door_Normal_20: -1227289228
-      Sprite_Door_Normal_Frame: -1590150695
-      Sprite_Door_Normal_15: -1794897390
-      Sprite_Door_Normal_11: -845721192
-      Sprite_Door_Normal_17: 1370913407
-      Sprite_Door_Normal_13: -679345738
-      Sprite_Door_Normal_RightLeaf: -711380964
-      Sprite_Door_Normal_14: -1815839051
-      Sprite_Door_Normal_19: -436543546
-      Sprite_Door_Normal_10: 57135398
-      Sprite_Door_Normal_7: -859539339
+      Sprite_Door_Boss_RightLeaf: -98340418
+      Sprite_Door_Boss_Frame: -46270616
+      Sprite_Door_Boss_RedLight: -428900281
+      Sprite_Door_Boss_5: 848904867
+      Sprite_Door_Boss_LeftLeaf: 1510935416
+      Sprite_Door_Boss_Inside: 1485025409
+      Sprite_Door_Boss_4: 1965116494
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

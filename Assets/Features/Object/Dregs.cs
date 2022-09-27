@@ -8,7 +8,7 @@ namespace II
 
         private void Start()
         {
-            fakeHeight.Jump(2.5f, 1.0f);
+            fakeHeight.Jump(3.5f, 1.5f);
         }
     }
 }

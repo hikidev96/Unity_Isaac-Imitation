@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -595321201, guid: 326de1eb308a3784fbb29d9227ba5d5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5408681011098850994}
   - component: {fileID: 6550575467934570058}
   - component: {fileID: 2592823989797893589}
+  - component: {fileID: 6996233122365849763}
   m_Layer: 0
   m_Name: TNT
   m_TagString: TNT
@@ -156,11 +157,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fa9f28f8d3d8f4f8288e7e148894cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sr: {fileID: 5408681010768148601}
+  bc: {fileID: 6550575467934570058}
+  explosionPrefab: {fileID: 777764863262813229, guid: 26e2403beb50057418831fbd83c17ef4, type: 3}
+  dregsInstantiator: {fileID: 6996233122365849763}
   spritesPerHp:
   - {fileID: -718043512, guid: 326de1eb308a3784fbb29d9227ba5d5c, type: 3}
   - {fileID: -1963841941, guid: 326de1eb308a3784fbb29d9227ba5d5c, type: 3}
   - {fileID: -1471377728, guid: 326de1eb308a3784fbb29d9227ba5d5c, type: 3}
   - {fileID: -595321201, guid: 326de1eb308a3784fbb29d9227ba5d5c, type: 3}
-  sr: {fileID: 5408681010768148601}
-  bc: {fileID: 6550575467934570058}
-  explosionPrefab: {fileID: 777764863262813229, guid: 26e2403beb50057418831fbd83c17ef4, type: 3}
+--- !u!114 &6996233122365849763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408681011098850992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c71a0cb94f139e44986d34717839761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dregsPrefabs:
+  - {fileID: 2328890272734949883, guid: 10f6f4e73ca919b439a528fab1d84c2c, type: 3}
+  - {fileID: 2328890272734949883, guid: d0f50ce28f4e7ea4b8af3fcc48b3e005, type: 3}
+  - {fileID: 2328890272734949883, guid: 4c482cc7c23052945b28702edb2b619f, type: 3}
+  - {fileID: 2328890272734949883, guid: 5be408c593592ca44a2c05ba5bbd5b3f, type: 3}
+  dregsRandomCountRange: {x: 1, y: 3}

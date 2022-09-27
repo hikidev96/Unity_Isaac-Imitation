@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5575109277300020152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5575109277300020155}
+  - component: {fileID: 5575109277300020154}
+  m_Layer: 0
+  m_Name: BluePrintMaterializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5575109277300020155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5575109277300020152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5575109277300020154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5575109277300020152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54e8c29bd89f084bae8d3064019a3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bluePrint: {fileID: 11400000, guid: 5a88e1c44c26d11448fd2b86667d1a64, type: 2}
+  normalDoorPrefab: {fileID: 1059471106081676731, guid: f672851e8ef6a834e883d95c6b0cde9a, type: 3}
+  bossDoorPrefab: {fileID: 8578805643828260207, guid: 8a993ccd1827c464196d7439a36b0695, type: 3}
+  shopDoorPrefab: {fileID: 1059471106081676731, guid: 8d390f4b1199380448240e02f22b72d4, type: 3}
+  treasureDoorPrefab: {fileID: 8578805643828260207, guid: 6ff3f646f996d2440b0c403ad91b5af1, type: 3}
+  firstRoomPrefab: {fileID: 1102345347082721931, guid: ed4ec628fe3f8ec4d8ea5bd326cd917f, type: 3}
+  normalRoomPrefabs:
+  - {fileID: 1064196292885315347, guid: 54b6890ef5075ff438473a8e4dcc5c6f, type: 3}
+  - {fileID: 1064196292885315347, guid: 201a6697446191649b1d75b46b6e990a, type: 3}
+  - {fileID: 1064196292885315347, guid: 0d8dd2ade2c25e64ca1fb9876df4db1f, type: 3}
+  - {fileID: 1064196292885315347, guid: c16e2b1ebfbab224584aaf2a3be095a6, type: 3}
+  bossRoomPrefabs:
+  - {fileID: 1304633876216077664, guid: 9234ab3266a6a5e4e9432cd1b0d31eda, type: 3}
+  shopRoomPrefabs:
+  - {fileID: 923527715640019015, guid: d6bb8c2a72a585e4893ab8d42135665d, type: 3}
+  treasureRoomPrefabs:
+  - {fileID: 7501773829614797064, guid: 1373cf980101d8548811905a75c4e5a5, type: 3}

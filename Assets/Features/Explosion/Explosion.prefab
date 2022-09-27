@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 777764863262813230}
-  - component: {fileID: 777764863262813231}
+  - component: {fileID: -3662342427227657784}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &777764863262813231
+--- !u!114 &-3662342427227657784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,10 +42,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 777764863262813229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc1f95233de3c954780ca07adc5a8e04, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f40e76a0c0407a40bc2d0fcc47542b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.3
+  vestigePrefab: {fileID: 7497534937504469925, guid: c62075314e809d244a250342940c7c72, type: 3}
+  explosionRadius: 1
 --- !u!1 &777764864119266027
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +119,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -1291901427, guid: 86071307e6baf2047ab2798d6d2ec928, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

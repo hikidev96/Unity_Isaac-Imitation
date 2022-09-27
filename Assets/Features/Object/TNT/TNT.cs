@@ -1,13 +1,15 @@
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 namespace II
 {
     public class TNT : MonoBehaviour, IDamage
     {
-        [SerializeField] private Sprite[] spritesPerHp;
-        [SerializeField] private SpriteRenderer sr;
-        [SerializeField] private BoxCollider2D bc;
-        [SerializeField] private GameObject explosionPrefab;
+        [SerializeField, TitleGroup("Required"), Required] private SpriteRenderer sr;
+        [SerializeField, TitleGroup("Required"), Required] private BoxCollider2D bc;
+        [SerializeField, TitleGroup("Required"), Required] private GameObject explosionPrefab;
+        [SerializeField, TitleGroup("Required"), Required] private DregsInstantiator dregsInstantiator;
+        [SerializeField, TitleGroup("Sprite")] private Sprite[] spritesPerHp;
 
         private int hp = 3;
 
@@ -18,16 +20,30 @@ namespace II
             if (damageType == EDamageType.Bomb) hp = 0;
             if (damageType == EDamageType.Tear) hp -= 1;
 
-            if (hp == 3) sr.sprite = spritesPerHp[hp];
-            if (hp == 2) sr.sprite = spritesPerHp[hp];
-            if (hp == 1) sr.sprite = spritesPerHp[hp];
+            sr.sprite = spritesPerHp[hp];
+
             if (hp == 0)
             {
-                sr.sprite = spritesPerHp[hp];
-                sr.sortingLayerID = SortingLayer.NameToID("GroundSurface");
-                Instantiate(explosionPrefab, this.transform.position, Quaternion.identity);
-                Destroy(bc);
+                sr.sortingLayerID = SortingLayer.NameToID("LowerGround");
+                InstantiateExplosion();
+                InstantiateDregs();
+                DestroyBoxCollider();
             }
+        }
+
+        private void InstantiateExplosion()
+        {
+            Instantiate(explosionPrefab, this.transform.position + new Vector3(0.0f, -0.5f, 0.0f), Quaternion.identity);
+        }
+
+        private void InstantiateDregs()
+        {
+            dregsInstantiator.InstantitateDregs();
+        }
+
+        private void DestroyBoxCollider()
+        {
+            Destroy(bc);
         }
     }
 }

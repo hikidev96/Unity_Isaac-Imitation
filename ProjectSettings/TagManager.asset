@@ -18,8 +18,8 @@ TagManager:
   - Water
   - UI
   - Isaac Tear
-  - 
-  - 
+  - Wall
+  - OutWall
   - 
   - 
   - 
@@ -58,6 +58,9 @@ TagManager:
     locked: 0
   - name: GroundSurface
     uniqueID: 3059754977
+    locked: 0
+  - name: LowerGround
+    uniqueID: 3022892145
     locked: 0
   - name: OnGround
     uniqueID: 1617876675
