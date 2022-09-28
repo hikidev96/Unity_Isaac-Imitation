@@ -70,6 +70,7 @@ namespace II
         [Button("Clear"), TitleGroup("Debug")]
         public void Clear()
         {
+            DeactivateAllDoorCollider();
             OpenAllDoor();
 
             roomData.IsCleared = true;
@@ -100,24 +101,40 @@ namespace II
         [Button("Open All Door"), TitleGroup("Debug")]
         private void OpenAllDoor()
         {
-            if (leftDoor != null)
+            if (leftDoor != null && leftDoor.IsLockedDoor == false)
             {
                 leftDoor.Open();
+            }
+            if (rightDoor != null && rightDoor.IsLockedDoor == false)
+            {
+                rightDoor.Open();
+            }
+            if (topDoor != null && topDoor.IsLockedDoor == false)
+            {
+                topDoor.Open();
+            }
+            if (bottomDoor != null && bottomDoor.IsLockedDoor == false)
+            {
+                bottomDoor.Open();
+            }
+        }
+
+        private void DeactivateAllDoorCollider()
+        {
+            if (leftDoor != null)
+            {
                 leftDoorCollider.SetActive(false);
             }
             if (rightDoor != null)
             {
-                rightDoor.Open();
                 rightDoorCollider.SetActive(false);
             }
             if (topDoor != null)
             {
-                topDoor.Open();
                 topDoorCollider.SetActive(false);
             }
             if (bottomDoor != null)
             {
-                bottomDoor.Open();
                 bottomDoorCollider.SetActive(false);
             }
         }

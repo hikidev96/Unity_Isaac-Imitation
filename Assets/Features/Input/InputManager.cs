@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace II
@@ -8,9 +9,11 @@ namespace II
         private Controls controls;
         private Vector2 movementValue;
         private Vector2 fireValue;
+        private UnityEvent onUseBombKeyPress = new UnityEvent();
 
         public Vector2 MovementValue => movementValue;
         public Vector2 FireValue => fireValue;
+        public UnityEvent OnUseBombKeyPress => onUseBombKeyPress;   
 
         private void Awake()
         {
@@ -51,6 +54,14 @@ namespace II
         void Controls.IIsaacControlActions.OnVerticalFireTear(InputAction.CallbackContext context)
         {
             fireValue = new Vector2(0.0f, context.ReadValue<float>());
+        }
+
+        void Controls.IIsaacControlActions.OnUseBomb(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                onUseBombKeyPress?.Invoke();
+            }
         }
     }
 }

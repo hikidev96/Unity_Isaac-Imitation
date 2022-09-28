@@ -17,12 +17,14 @@ namespace II
         [SerializeField] private Transform leftDoorLeaf;
         [SerializeField] private Transform rightDoorLeaf;
         [SerializeField] private Transform shiftSpot;
+        [SerializeField] private bool isLockedDoor;
 
         private Room belongRoom;
         private Door outDoor;        
 
         public Room BelongRoom => belongRoom;
         public Transform ShiftSpot => shiftSpot;
+        public bool IsLockedDoor => isLockedDoor;   
 
         public static Door Create(Room belongRoom, GameObject prefab, Vector2 pos, Quaternion rot, Transform parent)
         {

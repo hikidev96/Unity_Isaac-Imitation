@@ -105,7 +105,7 @@ SortingGroup:
   m_GameObject: {fileID: 3952006984841866785}
   m_Enabled: 1
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
 --- !u!1 &3952006984842330750
 GameObject:
@@ -180,7 +180,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -1041024674, guid: 36d285b7e950a4c42a9348ac80db29c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 3952006985562461499}
   - component: {fileID: 3952006985562461445}
   - component: {fileID: 3952006985562461446}
-  - component: {fileID: 3952006985562461444}
+  - component: {fileID: 7783984164378237983}
   m_Layer: 3
   m_Name: Isaac
   m_TagString: Isaac
@@ -346,7 +346,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
   m_Radius: 0.2
---- !u!114 &3952006985562461444
+--- !u!114 &7783984164378237983
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -355,11 +355,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3952006985562461498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb977cb6a8ce4b4d809c7a7bc395c9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 13b035ec2874b4f4780be4bf1bd91a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 3952006985562461445}
-  moveSpeed: 0.75
+  bombPrefab: {fileID: 8734726921649460980, guid: a46283ec693b0214899fe7bc8ec420ee, type: 3}
 --- !u!1 &3952006985764426057
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +432,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: -1
   m_Sprite: {fileID: -1016241952, guid: 36d285b7e950a4c42a9348ac80db29c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -479,6 +478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyAnimator: {fileID: 3952006985764426068}
+  rb: {fileID: 3952006985562461445}
+  moveSpeed: 0.75
 --- !u!1 &3952006985781298673
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb01a4e46cb08834c9a254ee94683dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isaacMovement: {fileID: 3952006985562461444}
+  isaacBody: {fileID: 2369648078335728970}
 --- !u!1 &5475379542552648438
 GameObject:
   m_ObjectHideFlags: 0

@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "UseBomb",
+                    "type": "Button",
+                    "id": "09b8aa41-8699-47a6-8b6b-2285dd2ce2e9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -174,6 +183,17 @@
                     "action": "VerticalFireTear",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "47dab541-e9e4-40b9-9482-507aec078710",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseBomb",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

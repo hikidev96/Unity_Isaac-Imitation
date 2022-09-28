@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 1240169594, guid: e114a81711461474d8e2de1048be5e5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6550575467934570058}
   - component: {fileID: -4921819461121533894}
   - component: {fileID: 7866962624668289929}
+  - component: {fileID: 186487750007870647}
   m_Layer: 0
   m_Name: Rock_Tinted
   m_TagString: Rock
@@ -157,12 +158,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a8a0075fde4d640b971530e1853f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sr: {fileID: 5408681010768148601}
   dregsInstantiator: {fileID: 7866962624668289929}
+  sr: {fileID: 5408681010768148601}
   sprites:
   - {fileID: 1240169594, guid: e114a81711461474d8e2de1048be5e5f, type: 3}
   - {fileID: -1451629361, guid: e114a81711461474d8e2de1048be5e5f, type: 3}
   - {fileID: 817038090, guid: e114a81711461474d8e2de1048be5e5f, type: 3}
+  pickupDropper: {fileID: 186487750007870647}
 --- !u!114 &7866962624668289929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,3 +183,20 @@ MonoBehaviour:
   - {fileID: 2328890272734949883, guid: 5aa8d7c217225e84db04c906de616e90, type: 3}
   - {fileID: 2328890272734949883, guid: 8488e6f5a0d6215449b0d2202cc61df3, type: 3}
   dregsRandomCountRange: {x: 1, y: 4}
+--- !u!114 &186487750007870647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408681011098850992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9b7aa059340634680605a198d5b70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupPrefabs:
+  - {fileID: 8734726921649460980, guid: a46283ec693b0214899fe7bc8ec420ee, type: 3}
+  - {fileID: 6985865307796025545, guid: 6aecd37aaa42dea4bacc855961351497, type: 3}
+  - {fileID: 4113580827462559412, guid: 5d2b465fb6d5a3743b67c0d921f6c423, type: 3}
+  dropCount: 1

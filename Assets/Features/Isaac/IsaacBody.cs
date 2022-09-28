@@ -5,6 +5,8 @@ namespace II
     public class IsaacBody : MonoBehaviour
     {
         [SerializeField] private Animator bodyAnimator;
+        [SerializeField] private Rigidbody2D rb;
+        [SerializeField] private float moveSpeed;
 
         private Vector2 defaultRot = Vector2.zero;
         private Vector2 flipRot = new Vector2(0.0f, 180.0f);
@@ -13,6 +15,11 @@ namespace II
         {
             PlayBodyAnimationByMovementInput();
             FlipByMovementValue();
+        }
+
+        public void Move()
+        {
+            rb.AddForce(Manager.Input.MovementValue * moveSpeed * Time.deltaTime * 4000.0f, ForceMode2D.Force);
         }
 
         private void PlayBodyAnimationByMovementInput()

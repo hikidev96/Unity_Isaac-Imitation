@@ -3,7 +3,7 @@ using UnityEngine;
 namespace II
 {
     public class IsaacState : State
-    {        
+    {
         public override void Enter()
         {
             

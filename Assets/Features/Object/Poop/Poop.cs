@@ -8,6 +8,7 @@ namespace II
         [SerializeField] private SpriteRenderer sr;
         [SerializeField] private BoxCollider2D bc;
         [SerializeField] private DregsInstantiator dregsInstantiator;
+        [SerializeField] private PickupDropper pickupDropper;
 
         private int hp = 4;
 
@@ -27,6 +28,8 @@ namespace II
 
             if (hp == 0)
             {
+                pickupDropper.Drop();
+                sr.sortingLayerID = SortingLayer.NameToID("LowerGround");
                 Destroy(bc);
             }
         }

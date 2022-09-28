@@ -62,6 +62,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UseBomb"",
+                    ""type"": ""Button"",
+                    ""id"": ""09b8aa41-8699-47a6-8b6b-2285dd2ce2e9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -196,6 +205,17 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""action"": ""VerticalFireTear"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""47dab541-e9e4-40b9-9482-507aec078710"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseBomb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -208,6 +228,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_IsaacControl_HorizontalFireTear = m_IsaacControl.FindAction("HorizontalFireTear", throwIfNotFound: true);
         m_IsaacControl_VerticalMove = m_IsaacControl.FindAction("VerticalMove", throwIfNotFound: true);
         m_IsaacControl_VerticalFireTear = m_IsaacControl.FindAction("VerticalFireTear", throwIfNotFound: true);
+        m_IsaacControl_UseBomb = m_IsaacControl.FindAction("UseBomb", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -271,6 +292,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_IsaacControl_HorizontalFireTear;
     private readonly InputAction m_IsaacControl_VerticalMove;
     private readonly InputAction m_IsaacControl_VerticalFireTear;
+    private readonly InputAction m_IsaacControl_UseBomb;
     public struct IsaacControlActions
     {
         private @Controls m_Wrapper;
@@ -279,6 +301,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @HorizontalFireTear => m_Wrapper.m_IsaacControl_HorizontalFireTear;
         public InputAction @VerticalMove => m_Wrapper.m_IsaacControl_VerticalMove;
         public InputAction @VerticalFireTear => m_Wrapper.m_IsaacControl_VerticalFireTear;
+        public InputAction @UseBomb => m_Wrapper.m_IsaacControl_UseBomb;
         public InputActionMap Get() { return m_Wrapper.m_IsaacControl; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -300,6 +323,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @VerticalFireTear.started -= m_Wrapper.m_IsaacControlActionsCallbackInterface.OnVerticalFireTear;
                 @VerticalFireTear.performed -= m_Wrapper.m_IsaacControlActionsCallbackInterface.OnVerticalFireTear;
                 @VerticalFireTear.canceled -= m_Wrapper.m_IsaacControlActionsCallbackInterface.OnVerticalFireTear;
+                @UseBomb.started -= m_Wrapper.m_IsaacControlActionsCallbackInterface.OnUseBomb;
+                @UseBomb.performed -= m_Wrapper.m_IsaacControlActionsCallbackInterface.OnUseBomb;
+                @UseBomb.canceled -= m_Wrapper.m_IsaacControlActionsCallbackInterface.OnUseBomb;
             }
             m_Wrapper.m_IsaacControlActionsCallbackInterface = instance;
             if (instance != null)
@@ -316,6 +342,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @VerticalFireTear.started += instance.OnVerticalFireTear;
                 @VerticalFireTear.performed += instance.OnVerticalFireTear;
                 @VerticalFireTear.canceled += instance.OnVerticalFireTear;
+                @UseBomb.started += instance.OnUseBomb;
+                @UseBomb.performed += instance.OnUseBomb;
+                @UseBomb.canceled += instance.OnUseBomb;
             }
         }
     }
@@ -326,5 +355,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnHorizontalFireTear(InputAction.CallbackContext context);
         void OnVerticalMove(InputAction.CallbackContext context);
         void OnVerticalFireTear(InputAction.CallbackContext context);
+        void OnUseBomb(InputAction.CallbackContext context);
     }
 }

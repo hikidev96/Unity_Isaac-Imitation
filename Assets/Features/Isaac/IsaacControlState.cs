@@ -4,7 +4,7 @@ namespace II
 {
     public class IsaacControlState : IsaacState
     {
-        [SerializeField] private IsaacMovement isaacMovement;
+        [SerializeField] private IsaacBody isaacBody;
 
         public override void Enter()
         {
@@ -20,7 +20,7 @@ namespace II
         {
             base.PhyiscsUpdate();
 
-            isaacMovement.Move();
+            isaacBody.Move();
         }
 
         public override void Exit()

@@ -4,9 +4,11 @@ namespace II
 {
     public class FirePlace : MonoBehaviour, IDamage
     {
+        [SerializeField] private SpriteRenderer firePlaceViewSR;
         [SerializeField] private Transform fireTransform;
         [SerializeField] private GameObject firePoofPrefab;
         [SerializeField] private BoxCollider2D bc;
+        [SerializeField] private PickupDropper pickupDropper;
 
         private int hp = 4;
 
@@ -23,6 +25,8 @@ namespace II
             if (hp == 0)
             {
                 Instantiate(firePoofPrefab, this.transform.position, Quaternion.identity);
+                firePlaceViewSR.sortingLayerID = SortingLayer.NameToID("LowerGround");
+                pickupDropper.Drop();
                 Destroy(bc);
                 Destroy(fireTransform.gameObject);
             }
