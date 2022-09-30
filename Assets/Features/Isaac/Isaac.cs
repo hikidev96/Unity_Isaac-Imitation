@@ -8,7 +8,7 @@ namespace II
 
         [SerializeField] private GameObject bombPrefab;
 
-        private int coinCount;
+        private int coinCount = 10;
         private int keyCount = 1;
         private int bombCount = 1;
         private int currentHeartCount = 6;
@@ -37,6 +37,15 @@ namespace II
         public void AddKey(int amount)
         {
             keyCount += amount;
+        }
+
+        public bool TryUseCoin(int amount)
+        {
+            if (coinCount < amount) return false;
+
+            coinCount -= amount;
+
+            return true;
         }
 
         public bool TryUseKey()

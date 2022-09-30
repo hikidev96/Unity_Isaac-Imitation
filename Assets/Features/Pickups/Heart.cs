@@ -4,7 +4,7 @@ namespace II
 {
     public class Heart : Pickup
     {
-        protected override void Pickuped()
+        public override void Pickuped()
         {            
             if (Isaac.Instance.TryAddHeart(1))
             {

@@ -4,7 +4,7 @@ namespace II
 {
     public class Key : Pickup
     {
-        protected override void Pickuped()
+        public override void Pickuped()
         {
             base.Pickuped();
 

@@ -42,7 +42,7 @@ namespace II
             isThrew = true;
         }
 
-        protected override void Pickuped()
+        public override void Pickuped()
         {
             if (isThrew == true) return;
 
