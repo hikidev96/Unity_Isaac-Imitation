@@ -6,7 +6,7 @@ namespace II
     {
         public override void Pickuped()
         {            
-            if (Isaac.Instance.TryAddHeart(1))
+            if (Isaac.Instance.TryRecoverHeart(1))
             {
                 StartCoroutine(PlayPickupAnimation());
             }

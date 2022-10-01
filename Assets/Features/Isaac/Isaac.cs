@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
+using Sirenix.OdinInspector;
 
 namespace II
 {
-    public class Isaac : MonoBehaviour
+    public class Isaac : MonoBehaviour, IDamage
     {
         public static Isaac Instance;
 
@@ -13,6 +15,18 @@ namespace II
         private int bombCount = 1;
         private int currentHeartCount = 6;
         private int maxHeartCount = 6;
+        private UnityEvent<int> onHeartRecover = new UnityEvent<int>();
+        private UnityEvent onMaxHeartAdd = new UnityEvent();
+        private UnityEvent onHeartDamage = new UnityEvent();
+
+        public int CoinCount => coinCount;
+        public int KeyCount => keyCount;
+        public int BombCount => bombCount;
+        public int CurrentHeartCount => currentHeartCount;
+        public int MaxHeartCount => maxHeartCount;
+        public UnityEvent<int> OnHeartRecover => onHeartRecover;
+        public UnityEvent OnHeartAdd => onMaxHeartAdd;
+        public UnityEvent OnHeartDamage => onHeartDamage; 
 
         private void Awake()
         {
@@ -62,7 +76,29 @@ namespace II
             bombCount += amount;
         }
 
-        public bool TryAddHeart(int amount)
+        [Button]
+        public void AddMaxHeart()
+        {
+            maxHeartCount += 2;
+
+            onMaxHeartAdd.Invoke();
+        }
+
+        [Button]
+        void IDamage.Damage(float damage, EDamageType damageType)
+        {
+            currentHeartCount -= 1;
+
+            if (currentHeartCount < 0) // Isaac Die!
+            {
+                currentHeartCount = 0;
+            }
+
+            onHeartDamage.Invoke();
+        }
+
+        [Button]
+        public bool TryRecoverHeart(int amount)
         {
             if (maxHeartCount == currentHeartCount) return false;
 
@@ -72,6 +108,8 @@ namespace II
             {
                 currentHeartCount = maxHeartCount;
             }
+
+            onHeartRecover.Invoke(amount);
 
             return true;
         }
