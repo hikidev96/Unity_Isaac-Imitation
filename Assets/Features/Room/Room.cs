@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using Sirenix.OdinInspector;
 
 namespace II
@@ -16,6 +17,9 @@ namespace II
         public int RoomNumber;
         public ERoomType RoomType;
         public bool IsCleared;
+        public bool IsVisited;
+        public UnityEvent OnIsaacEnter = new UnityEvent();
+        public UnityEvent OnIsaacExit = new UnityEvent();
     }
 
     public class Room : MonoBehaviour
@@ -46,7 +50,7 @@ namespace II
         public Door RightDoor => rightDoor;
         public Door TopDoor => topDoor;
         public Door BottomDoor => bottomDoor;
-        public Transform DoorParent => doorParent;  
+        public Transform DoorParent => doorParent;
 
         private RoomData roomData;
 
@@ -146,6 +150,22 @@ namespace II
             leftDoor?.Close();
             topDoor?.Close();
             bottomDoor?.Close();
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.GetComponent<Isaac>() !=null)
+            {
+                roomData.OnIsaacEnter.Invoke();
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.GetComponent<Isaac>() != null)
+            {
+                roomData.OnIsaacExit.Invoke();
+            }
         }
     }
 }

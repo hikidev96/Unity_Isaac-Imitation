@@ -11,7 +11,7 @@ namespace II
         {
             for (int i = 0; i < bluePrint.RoomData.Count; ++i)
             {
-                var pos = bluePrint.GetPositionFromRoomNumber(bluePrint.RoomData[i].RoomNumber);
+                var pos = bluePrint.GetPositionByRoomNumber(bluePrint.RoomData[i].RoomNumber);
 
                 Gizmos.DrawWireCube(pos, Vector3.one);
                 Handles.Label(pos, bluePrint.RoomData[i].RoomNumber.ToString());

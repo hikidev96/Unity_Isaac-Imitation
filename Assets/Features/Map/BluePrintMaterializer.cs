@@ -30,7 +30,7 @@ namespace II
         {
             for (int i = 0; i < bluePrint.RoomData.Count; ++i)
             {
-                var pos = bluePrint.GetPositionFromRoomNumber(bluePrint.RoomData[i].RoomNumber) * 20.0f;
+                var pos = bluePrint.GetPositionByRoomNumber(bluePrint.RoomData[i].RoomNumber) * 20.0f;
                 Room newRoom = null;
 
                 if (bluePrint.RoomData[i].RoomNumber == bluePrint.START_ROOM_NUMBER)
@@ -69,22 +69,22 @@ namespace II
             {
                 if (bluePrint.Contain(rooms[i].RoomData.RoomNumber + 10) == true)
                 {
-                    var doorPrefab = GetDoorPrefabByRoomType(rooms[i].RoomData.RoomType, bluePrint.GetRoomDataFromRoomNumber(rooms[i].RoomData.RoomNumber + 10).RoomType);
+                    var doorPrefab = GetDoorPrefabByRoomType(rooms[i].RoomData.RoomType, bluePrint.GetRoomDataByRoomNumber(rooms[i].RoomData.RoomNumber + 10).RoomType);
                     rooms[i].AddDoor(EDoorDir.Top, Door.Create(rooms[i], doorPrefab, rooms[i].TopDoorSpot.position, rooms[i].TopDoorSpot.rotation, rooms[i].DoorParent));
                 }
                 if (bluePrint.Contain(rooms[i].RoomData.RoomNumber - 10) == true)
                 {
-                    var doorPrefab = GetDoorPrefabByRoomType(rooms[i].RoomData.RoomType, bluePrint.GetRoomDataFromRoomNumber(rooms[i].RoomData.RoomNumber - 10).RoomType);
+                    var doorPrefab = GetDoorPrefabByRoomType(rooms[i].RoomData.RoomType, bluePrint.GetRoomDataByRoomNumber(rooms[i].RoomData.RoomNumber - 10).RoomType);
                     rooms[i].AddDoor(EDoorDir.Bottom, Door.Create(rooms[i], doorPrefab, rooms[i].BottomDoorSpot.position, rooms[i].BottomDoorSpot.rotation, rooms[i].DoorParent));
                 }
                 if (bluePrint.Contain(rooms[i].RoomData.RoomNumber + 1) == true)
                 {
-                    var doorPrefab = GetDoorPrefabByRoomType(rooms[i].RoomData.RoomType, bluePrint.GetRoomDataFromRoomNumber(rooms[i].RoomData.RoomNumber + 1).RoomType);
+                    var doorPrefab = GetDoorPrefabByRoomType(rooms[i].RoomData.RoomType, bluePrint.GetRoomDataByRoomNumber(rooms[i].RoomData.RoomNumber + 1).RoomType);
                     rooms[i].AddDoor(EDoorDir.Right, Door.Create(rooms[i], doorPrefab, rooms[i].RightDoorSpot.position, rooms[i].RightDoorSpot.rotation, rooms[i].DoorParent));
                 }
                 if (bluePrint.Contain(rooms[i].RoomData.RoomNumber - 1) == true)
                 {
-                    var doorPrefab = GetDoorPrefabByRoomType(rooms[i].RoomData.RoomType, bluePrint.GetRoomDataFromRoomNumber(rooms[i].RoomData.RoomNumber - 1).RoomType);
+                    var doorPrefab = GetDoorPrefabByRoomType(rooms[i].RoomData.RoomType, bluePrint.GetRoomDataByRoomNumber(rooms[i].RoomData.RoomNumber - 1).RoomType);
                     rooms[i].AddDoor(EDoorDir.Left, Door.Create(rooms[i], doorPrefab, rooms[i].LeftDoorSpot.position, rooms[i].LeftDoorSpot.rotation, rooms[i].DoorParent));
                 }
             }

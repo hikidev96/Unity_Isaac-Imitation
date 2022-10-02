@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: eb64775404ca17f42bc406471348511f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 26
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite_HUD_Minimap_Frame
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 55
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef25c6741b48234b9df8f98ee631199
+      internalID: -1583039695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_HUD_Minimap_Visited
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 134
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce683c4fb125634ea6b77ee0c6935cd
+      internalID: -1653531662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_HUD_Minimap_UnVisited
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 118
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c3cb512a0ad024e993f19802df5cce
+      internalID: 2137970590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_HUD_Minimap_Shop
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 102
+        width: 7
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c638026642028b94b8bdb71b0a0bc9d9
+      internalID: 1581238647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_HUD_Minimap_Treasure
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 87
+        width: 7
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3aed34bb588a274da1eecbde80066b1
+      internalID: 1755055919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_HUD_Minimap_Boss
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 70
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ddff6d3d12b6948be418361d463976
+      internalID: 1495558714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_HUD_Minimap_Visiting
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 70
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea86e6cd8fbeea4a95f270a2d6d8989
+      internalID: -1456667608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sprite_HUD_Minimap_UnVisited: 2137970590
+      Sprite_HUD_Minimap_59: -638468199
+      Sprite_HUD_Minimap_57: 1398426317
+      Sprite_HUD_Minimap_14: -331123775
+      Sprite_HUD_Minimap_30: -2147279037
+      Sprite_HUD_Minimap_52: -1883696127
+      Sprite_HUD_Minimap_47: 2074900924
+      Sprite_HUD_Minimap_22: -377635224
+      Sprite_HUD_Minimap_29: 88465087
+      Sprite_HUD_Minimap_Boss: 1495558714
+      Sprite_HUD_Minimap_55: 223727455
+      Sprite_HUD_Minimap_33: -498112780
+      Sprite_HUD_Minimap_46: 723258634
+      Sprite_HUD_Minimap_54: 370864769
+      Sprite_HUD_Minimap_42: 844019490
+      Sprite_HUD_Minimap_24: -216404269
+      Sprite_HUD_Minimap_21: -550110300
+      Sprite_HUD_Minimap_7: -1295326662
+      Sprite_HUD_Minimap_56: 896326187
+      Sprite_HUD_Minimap_11: 1948400451
+      Sprite_HUD_Minimap_49: 613606320
+      Sprite_HUD_Minimap_53: -940413102
+      Sprite_HUD_Minimap_Frame: -1583039695
+      Sprite_HUD_Minimap_34: 687967084
+      Sprite_HUD_Minimap_Treasure: 1755055919
+      Sprite_HUD_Minimap_15: 319363051
+      Sprite_HUD_Minimap_28: 1042594051
+      Sprite_HUD_Minimap_58: -441930746
+      Sprite_HUD_Minimap_Visiting: -1456667608
+      Sprite_HUD_Minimap_27: -1719571823
+      Sprite_HUD_Minimap_6: 1206374061
+      Sprite_HUD_Minimap_39: -423603600
+      Sprite_HUD_Minimap_16: 82017281
+      Sprite_HUD_Minimap_43: 1888904318
+      Sprite_HUD_Minimap_10: -1558738161
+      Sprite_HUD_Minimap_35: -480114307
+      Sprite_HUD_Minimap_36: 1618153892
+      Sprite_HUD_Minimap_13: 694569795
+      Sprite_HUD_Minimap_23: -275089417
+      Sprite_HUD_Minimap_40: -2049153001
+      Sprite_HUD_Minimap_18: 311225349
+      Sprite_HUD_Minimap_8: 1830840636
+      Sprite_HUD_Minimap_19: 1629226523
+      Sprite_HUD_Minimap_17: -1633354223
+      Sprite_HUD_Minimap_48: -757203503
+      Sprite_HUD_Minimap_32: 887877243
+      Sprite_HUD_Minimap_50: 1450469718
+      Sprite_HUD_Minimap_Shop: 1581238647
+      Sprite_HUD_Minimap_51: -762520326
+      Sprite_HUD_Minimap_38: -133013703
+      Sprite_HUD_Minimap_4: 2022021830
+      Sprite_HUD_Minimap_25: 674762231
+      Sprite_HUD_Minimap_37: 953033354
+      Sprite_HUD_Minimap_45: -1971543170
+      Sprite_HUD_Minimap_60: 1321890123
+      Sprite_HUD_Minimap_44: -1392132142
+      Sprite_HUD_Minimap_Visited: -1653531662
+      Sprite_HUD_Minimap_41: -910954475
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

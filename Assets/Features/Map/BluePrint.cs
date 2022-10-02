@@ -37,7 +37,7 @@ namespace II
             return roomNumbers.Contains(roomNumber);
         }
 
-        public RoomData GetRoomDataFromRoomNumber(int roomNumber)
+        public RoomData GetRoomDataByRoomNumber(int roomNumber)
         {
             for (int i = 0; i < roomData.Count; ++i)
             {
@@ -48,7 +48,7 @@ namespace II
             return null;
         }
 
-        public Vector2 GetPositionFromRoomNumber(int roomNumber)
+        public Vector2 GetPositionByRoomNumber(int roomNumber)
         {
             return new Vector2(roomNumber % 10, roomNumber / 10);
         }
@@ -114,17 +114,17 @@ namespace II
                 roomData.Add(newRoomData);
             }
 
-            var bossRoomData = GetRoomDataFromRoomNumber(endRoomNumbers[endRoomNumbers.Count - 1]);
+            var bossRoomData = GetRoomDataByRoomNumber(endRoomNumbers[endRoomNumbers.Count - 1]);
             bossRoomData.RoomType = ERoomType.Boss;
 
             if (endRoomNumbers.Count >= 2)
             {
-                var treasureRoom = GetRoomDataFromRoomNumber(endRoomNumbers[0]);
+                var treasureRoom = GetRoomDataByRoomNumber(endRoomNumbers[0]);
                 treasureRoom.RoomType = ERoomType.Treasure;
             }
             if (endRoomNumbers.Count >= 3)
             {
-                var shopRoom = GetRoomDataFromRoomNumber(endRoomNumbers[1]);
+                var shopRoom = GetRoomDataByRoomNumber(endRoomNumbers[1]);
                 shopRoom.RoomType = ERoomType.Shop;
             }
         }
