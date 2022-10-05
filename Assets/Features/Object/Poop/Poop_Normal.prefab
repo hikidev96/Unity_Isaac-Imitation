@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8053832368948576578}
   - component: {fileID: 8322330341913837760}
   - component: {fileID: 6795605203410324316}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Poop_Normal
   m_TagString: Rock
   m_Icon: {fileID: 0}

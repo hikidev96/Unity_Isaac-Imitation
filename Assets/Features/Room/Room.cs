@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using Sirenix.OdinInspector;
+using Yemin.PathFinding;
 
 namespace II
 {
@@ -36,6 +37,8 @@ namespace II
         [SerializeField] private GameObject topDoorCollider;
         [SerializeField] private GameObject bottomDoorCollider;
 
+        [SerializeField] private PathFinding pathFinding;
+
         private Door leftDoor;
         private Door rightDoor;
         private Door topDoor;
@@ -62,6 +65,9 @@ namespace II
             {
                 Clear();
             }
+
+            InstantiateAllRoomObjects();
+            pathFinding.Init();
         }
 
         public static Room Create(GameObject prefab, Vector2 pos, RoomData roomData)
@@ -150,6 +156,16 @@ namespace II
             leftDoor?.Close();
             topDoor?.Close();
             bottomDoor?.Close();
+        }
+
+        private void InstantiateAllRoomObjects()
+        {
+            var spots = GetComponentsInChildren<RoomObjectSpot>();
+
+            foreach (var spot in spots)
+            {
+                spot.InstantiateObject();
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D collision)

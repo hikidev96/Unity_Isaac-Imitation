@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 6550575467934570058}
   - component: {fileID: 469600052239483091}
   - component: {fileID: 8030975423042981213}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FirePlace_Normal
   m_TagString: FirePlace
   m_Icon: {fileID: 0}

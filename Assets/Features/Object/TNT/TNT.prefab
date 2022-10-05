@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 6550575467934570058}
   - component: {fileID: 2592823989797893589}
   - component: {fileID: 6996233122365849763}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TNT
   m_TagString: TNT
   m_Icon: {fileID: 0}

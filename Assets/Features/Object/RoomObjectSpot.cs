@@ -23,11 +23,6 @@ namespace II
         [SerializeField] private List<RoomObjectGeneration> roomObjectGenerations;
         [SerializeField] private ERoomContentSize roomObjectSize;
 
-        private void Awake()
-        {
-            InstantiateObject();
-        }
-
         public void InstantiateObject()
         {
             for (int i = 0; i < roomObjectGenerations.Count; ++i)

@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: -4921819461121533894}
   - component: {fileID: 7866962624668289929}
   - component: {fileID: 186487750007870647}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_Tinted
   m_TagString: Rock
   m_Icon: {fileID: 0}

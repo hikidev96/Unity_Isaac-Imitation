@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1617876675
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -90091188, guid: e114a81711461474d8e2de1048be5e5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5408681011098850994}
   - component: {fileID: 6550575467934570058}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Block_Metal
   m_TagString: Wall
   m_Icon: {fileID: 0}
