@@ -54,6 +54,7 @@ namespace II
         public Door TopDoor => topDoor;
         public Door BottomDoor => bottomDoor;
         public Transform DoorParent => doorParent;
+        public PathFinding PathFinding => pathFinding;
 
         private RoomData roomData;
 
