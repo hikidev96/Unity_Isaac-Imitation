@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Flying_BasePrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 6892384238560229662, guid: ec685ae6b3f633545a6783add2afc67b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7167951333153521158, guid: ec685ae6b3f633545a6783add2afc67b, type: 3}
       propertyPath: m_SortingLayer
       value: 7

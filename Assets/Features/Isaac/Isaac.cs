@@ -85,7 +85,7 @@ namespace II
         }
 
         [Button]
-        void IDamage.Damage(float damage, EDamageType damageType)
+        public void Damage(float damage, EDamageType damageType)
         {
             currentHeartCount -= 1;
 
@@ -95,6 +95,8 @@ namespace II
             }
 
             onHeartDamage.Invoke();
+
+            Debug.Log("Isaac Damaged!");
         }
 
         [Button]

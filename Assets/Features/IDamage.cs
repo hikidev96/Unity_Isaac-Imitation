@@ -6,6 +6,7 @@ namespace II
     {
         Tear,
         Bomb,
+        Contact
     }
 
     public interface IDamage

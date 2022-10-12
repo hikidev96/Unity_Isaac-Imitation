@@ -10,7 +10,7 @@ namespace II
         public void Fly()
         {
             var dir = GetRandomVector2Dir();
-            rb2d.MovePosition(rb2d.position + dir * flyingSpeed * Time.deltaTime);
+            rb2d.AddForce(dir * flyingSpeed * Time.deltaTime, ForceMode2D.Impulse);
         }
 
         private Vector2 GetRandomVector2Dir()

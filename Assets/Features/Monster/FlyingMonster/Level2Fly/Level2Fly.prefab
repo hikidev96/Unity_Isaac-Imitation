@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1098233194163828849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7306501881145529629}
+  - component: {fileID: 2678601674162092548}
+  m_Layer: 0
+  m_Name: DeadState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7306501881145529629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098233194163828849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5451789024038994404}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2678601674162092548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098233194163828849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd12f4ab1cd6f498380417fb3f4e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level2Fly: {fileID: 1605777772234157355}
 --- !u!1 &4258518302341312687
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6036074390817586352}
-  - component: {fileID: 1906541880110305141}
+  - component: {fileID: 4189485881536213584}
   m_Layer: 0
   m_Name: IdleState
   m_TagString: Untagged
@@ -32,7 +77,7 @@ Transform:
   m_Father: {fileID: 5451789024038994404}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1906541880110305141
+--- !u!114 &4189485881536213584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,10 +86,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4258518302341312687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a51981f2418258449a2294dc8e59cd1, type: 3}
+  m_Script: {fileID: 11500000, guid: 716b86130f8195343942ccd76b523891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fly: {fileID: 5770527317971701151}
+  level2Fly: {fileID: 1605777772234157355}
 --- !u!1001 &7508729724577175478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55,14 +100,14 @@ PrefabInstance:
     - target: {fileID: 1659450032295595626, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
       propertyPath: entryState
       value: 
-      objectReference: {fileID: 1906541880110305141}
+      objectReference: {fileID: 4189485881536213584}
     - target: {fileID: 1803413726928049450, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -688309410, guid: c7198a760296986478ce4e03ebd00f5d, type: 3}
+      objectReference: {fileID: 484920990, guid: 77f98273b5095544f8d9537267aa0c0c, type: 3}
     - target: {fileID: 2726934018885489202, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
       propertyPath: m_Name
-      value: Fly
+      value: Level2Fly
       objectReference: {fileID: 0}
     - target: {fileID: 2726934018885489205, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
       propertyPath: m_RootOrder
@@ -70,7 +115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726934018885489205, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.9999999
       objectReference: {fileID: 0}
     - target: {fileID: 2726934018885489205, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -112,10 +157,14 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5869213980422273771, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5973687069074414911, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 9b0c8ff50dcdd804d828c369532b251f, type: 2}
     - target: {fileID: 7245204934766551376, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1
@@ -156,7 +205,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2726934018885489202, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
   m_PrefabInstance: {fileID: 7508729724577175478}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5770527317971701151
+--- !u!114 &1605777772234157355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,13 +214,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 5614961706012755332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ed55c9be3755334497b741fdd6e81d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 566b0e56fb08df449a52982c4004c60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animancer: {fileID: 2321770634510738645}
-  flyingMovement: {fileID: 7832209364050495254}
-  flyAnimation: {fileID: 7400000, guid: 0ba6ef54c60b43449aab1606ba7aadf7, type: 2}
---- !u!114 &7832209364050495254
+  maxHp: 15
+  sm: {fileID: 9165899352532294108}
+  isaacChaser: {fileID: 5625686955824049177}
+  idleState: {fileID: 4189485881536213584}
+  deadState: {fileID: 2678601674162092548}
+  flyAnimation: {fileID: 7400000, guid: 00266b745e529f3478c62162be7790d5, type: 2}
+  deadAnimation: {fileID: 7400000, guid: ebe590ffcf103884ebc78986f277b634, type: 2}
+--- !u!114 &5625686955824049177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,8 +234,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 5614961706012755332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b50d8825db5fae4f84f41465bce81e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 565d7f9a63cbee6469864a0bfaf270c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 1879358140415442615}
-  flyingSpeed: 1
+  chasingSpeed: 6
+--- !u!114 &9165899352532294108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1659450032295595626, guid: ee70180b2c2210a48bf21f12a945c47d, type: 3}
+  m_PrefabInstance: {fileID: 7508729724577175478}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4923d93df2ad0fa4da96a9683f2a7586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

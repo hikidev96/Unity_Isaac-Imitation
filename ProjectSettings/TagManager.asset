@@ -22,8 +22,8 @@ TagManager:
   - OutWall
   - Pickup
   - Obstacle
-  - 
-  - 
+  - FlyingMonster
+  - GroundMonster
   - 
   - 
   - 
