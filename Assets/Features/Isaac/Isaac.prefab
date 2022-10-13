@@ -608,7 +608,7 @@ MonoBehaviour:
   rightEyeSpotWhenHorizontal: {fileID: 4060503972754578335}
   leftEyeSpotWhenVertical: {fileID: 8971136211821041528}
   rightEyeSpotWhenVertical: {fileID: 7109822953117521959}
-  tearPrefab: {fileID: 1071069804037916428, guid: 30fa6c2965ecc98429b30181d70c3fd6, type: 3}
+  tearPrefab: {fileID: 8981015440823973805, guid: bab26a7b30531234c8f9800e97c421a0, type: 3}
   fireRate: 0.5
 --- !u!1 &7067527422107254432
 GameObject:
