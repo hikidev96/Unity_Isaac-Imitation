@@ -18,7 +18,7 @@ namespace II
         private float fallingSpeed = 1.0f;
         private bool isFalling = false;
 
-        private void Update()
+        protected virtual void Update()
         {
             if (isMoving == false) return;
 
@@ -26,7 +26,7 @@ namespace II
             Fall();
         }
 
-        private void FixedUpdate()
+        protected virtual void FixedUpdate()
         {
             Move();
         }
@@ -49,11 +49,11 @@ namespace II
 
             viewTrans.transform.Translate(Vector2.down * fallingSpeed * Time.deltaTime, Space.Self);
 
-            if (viewTrans.transform.position.y <= shadowTrans.transform.position.y)
+            if (IsFellToGround() == true)
             {
                 Poof();
             }
-        }        
+        }                
 
         private void StopMove()
         {
@@ -72,7 +72,12 @@ namespace II
             }
         }
 
-        private void Poof()
+        protected bool IsFellToGround()
+        {
+            return viewTrans.transform.position.y <= shadowTrans.transform.position.y;
+        }
+
+        protected void Poof()
         {
             StopMove();
             shadowTrans.gameObject.SetActive(false);

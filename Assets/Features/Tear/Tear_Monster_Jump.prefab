@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071069804037916428, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}
       propertyPath: m_Name
-      value: Tear_Monster
+      value: Tear_Monster_Jump
       objectReference: {fileID: 0}
     - target: {fileID: 1071069804037916428, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}
       propertyPath: m_Layer
@@ -86,12 +86,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8499038890216940482, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}
   m_PrefabInstance: {fileID: 8250539241647354017}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5082415075687384546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3816677742848537923, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}
+  m_PrefabInstance: {fileID: 8250539241647354017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8981015440212853351 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1071069802503615174, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}
   m_PrefabInstance: {fileID: 8250539241647354017}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8981015440212853371}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad50f81b1d25c441943c37a89ba23f6, type: 3}
@@ -100,6 +105,11 @@ MonoBehaviour:
 --- !u!4 &8981015440212853370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1071069802503615195, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}
+  m_PrefabInstance: {fileID: 8250539241647354017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8981015440212853371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1071069802503615194, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}
   m_PrefabInstance: {fileID: 8250539241647354017}
   m_PrefabAsset: {fileID: 0}
 --- !u!58 &8981015440823973801 stripped
@@ -112,7 +122,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1071069804037916428, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}
   m_PrefabInstance: {fileID: 8250539241647354017}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1990741048083605374
+--- !u!114 &5347526180805987125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +131,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 8981015440823973805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c07e4ba6655b3b94ca7ed4ded1ca2479, type: 3}
+  m_Script: {fileID: 11500000, guid: 28b818a42895e7e4eafeadf40f201ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadow: {fileID: 5082415075687384546}
+  body: {fileID: 8981015440212853371}
+--- !u!114 &6605220858366849470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8981015440823973805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73080b0a42124b444956220aa21fda6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8981015440823973806}
@@ -130,6 +154,7 @@ MonoBehaviour:
   shadowTrans: {fileID: 544209246419669859}
   animancer: {fileID: 8981015440212853351}
   poofAnimation: {fileID: 7400000, guid: 7d967c041c4326f46b08e83c5813b3b9, type: 2}
+  fakeHeight: {fileID: 5347526180805987125}
 --- !u!50 &8981015440823973806 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1071069804037916431, guid: 87c79e448fb0eee4aa9b236756d5414c, type: 3}

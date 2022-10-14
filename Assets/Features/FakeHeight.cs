@@ -28,5 +28,12 @@ namespace II
             this.horizontalPower = horizontalPower;
             this.verticalPower = verticalPower;
         }
+
+        public void Jump(Vector2 forwardDir, float horizontalPower, float verticalPower)
+        {
+            this.forwardDir = forwardDir;
+            this.horizontalPower = horizontalPower;
+            this.verticalPower = verticalPower;
+        }
     }
 }
