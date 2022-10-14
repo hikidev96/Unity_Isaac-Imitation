@@ -31,8 +31,8 @@ namespace II
             if (isPossibleToFire == false) return false;
             if (Manager.Input.FireValue == Vector2.zero) return false;
             
-            var newTearObj = Instantiate(tearPrefab, GetPosToFireTear(), Quaternion.identity);
-            newTearObj.transform.right = Manager.Input.FireValue;
+            var newTear = Instantiate(tearPrefab, GetPosToFireTear(), Quaternion.identity).GetComponent<Tear>();
+            newTear.SetDir(Manager.Input.FireValue);
             SwapEyeToFire();
             StartCoroutine(WaitForReadyToFire());
 
@@ -55,11 +55,6 @@ namespace II
 
             return leftEyeSpotWhenVertical.position;
         }
-
-        //private Vector2 GetDirToFire()
-        //{
-        //    if (Manager.Input.FireValue)
-        //}
 
         private void SwapEyeToFire()
         {

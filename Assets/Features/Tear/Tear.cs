@@ -17,6 +17,7 @@ namespace II
         private float fallAfterTime = 2.0f;
         private float fallingSpeed = 1.0f;
         private bool isFalling = false;
+        private Vector2 dir = Vector2.right;
 
         protected virtual void Update()
         {
@@ -36,11 +37,16 @@ namespace II
             this.movingSpeed = movingSpeed;
         }
 
+        public void SetDir(Vector2 dir)
+        {
+            this.dir = dir;
+        }
+
         private void Move()
         {
             if (isMoving == false) return;
 
-            rb.MovePosition(rb.position + (Vector2)rb.transform.right * movingSpeed * Time.deltaTime);
+            rb.MovePosition(rb.position + dir * movingSpeed * Time.deltaTime);
         }
 
         private void Fall()

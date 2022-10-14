@@ -4,7 +4,7 @@ using Animancer;
 namespace II
 {
     public class Level2Fly : FlyingMonster
-    {
+    {        
         [SerializeField] private IsaacChaser isaacChaser;
         [SerializeField] private Level2FlyIdleState idleState;
         [SerializeField] private Level2FlyDeadState deadState;

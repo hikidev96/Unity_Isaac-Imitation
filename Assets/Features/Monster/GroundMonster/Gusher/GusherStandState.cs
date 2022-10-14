@@ -2,17 +2,14 @@ using UnityEngine;
 
 namespace II
 {
-    public class FooterFireState : FooterState
+    public class GusherStandState : GusherState
     {
-        [SerializeField] private TearShooter tearShooter;
-
         public override void Enter()
         {
             base.Enter();
 
-            var fireAnimationState = footer.PlayFireAnimation();
-            fireAnimationState.Events.OnEnd += () => footer.ToIdleState();
-            fireAnimationState.Events.Add(0.45f, () => tearShooter.Shoot(Isaac.Instance.transform.position));
+            gusher.PlayStandAnimation();
+            Invoke("ToWanderState", 1.0f);
         }
 
         public override void Exit()
@@ -28,6 +25,11 @@ namespace II
         public override void PhyiscsUpdate()
         {
             base.PhyiscsUpdate();
+        }
+
+        private void ToWanderState()
+        {
+            gusher.ToWanderState();
         }
     }
 }

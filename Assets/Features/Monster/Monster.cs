@@ -9,7 +9,7 @@ namespace II
     {
         [SerializeField] protected AnimancerComponent animancer;
         [SerializeField] protected float maxHp;
-        [SerializeField] protected StateMachine sm;
+        [SerializeField] protected StateMachine sm;        
 
         protected float currentHp;
         protected bool isDead = false;
@@ -46,7 +46,7 @@ namespace II
                 onDie?.Invoke();
                 isDead = true;
             }
-        }
+        }        
 
         public void SetRoom(Room room)
         {
