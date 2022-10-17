@@ -435,6 +435,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52df387dec37c424aa6309dea9c293c9, type: 3}
+--- !u!1001 &7870822843095276879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992136, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018611225984992143, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
+      propertyPath: m_Name
+      value: Monster_Ground_FrowningGaper
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 942e2b5df0453b943b1011b1c7bc4e1f, type: 3}
 --- !u!1001 &8248190699764658668
 PrefabInstance:
   m_ObjectHideFlags: 0

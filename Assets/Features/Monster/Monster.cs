@@ -9,7 +9,7 @@ namespace II
     {
         [SerializeField] protected AnimancerComponent animancer;
         [SerializeField] protected float maxHp;
-        [SerializeField] protected StateMachine sm;        
+        [SerializeField] protected StateMachine sm;
 
         protected float currentHp;
         protected bool isDead = false;
@@ -20,7 +20,7 @@ namespace II
         protected virtual void Awake()
         {
             currentHp = maxHp;
-            rb2d = GetComponent<Rigidbody2D>(); 
+            rb2d = GetComponent<Rigidbody2D>();
         }
 
         public static Monster Create(GameObject prefab, Vector2 position, Room room)
@@ -46,13 +46,13 @@ namespace II
                 onDie?.Invoke();
                 isDead = true;
             }
-        }        
+        }
 
         public void SetRoom(Room room)
         {
             this.room = room;
-        }
-        
+        }        
+
         protected virtual void OnCollisionStay2D(Collision2D collision)
         {
             var isaac = collision.gameObject.GetComponent<Isaac>();
